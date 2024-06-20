@@ -1,4 +1,4 @@
-# Exoplanet Microservice
+# SpaceVoyagers Microservice
 
 ## Description
 A Go microservice for managing different exoplanets. Supports adding, listing, updating, retrieving, deleting exoplanets, and fuel estimation for trips.
@@ -11,8 +11,8 @@ A Go microservice for managing different exoplanets. Supports adding, listing, u
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/exoplanet-service.git
-    cd exoplanet-service
+    git clone https://github.com/Abhishekagarwal1597/spaceVoyagers
+    cd spaceVoyagers
     ```
 
 2. Install dependencies:

@@ -1,0 +1,25 @@
+# Start with the official Golang image
+FROM golang:1.16
+
+# Set the current working directory inside the container
+WORKDIR /app
+
+# Copy go.mod and go.sum files
+COPY go.mod go.sum ./
+
+# Download
+RUN go mod Download 
+
+# Copy the Code
+COPY . .
+
+# Create a binary 
+RUN go build  -o spaceVoyager
+
+# Give it the executable Permission
+RUN chmod +x /spaceVoyager
+
+# Expose a port
+EXPOSE 8080
+
+CMD [ "./spaceVoyager" ]
